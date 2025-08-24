@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+       <meta charset="UTF-8">
+        <title>Simple Interest Calculator</title>
+       <link rel="stylesheet" href="style.css">
+       <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="maindiv"> 
+            <div class="title"> 
+             <h3>Simple Interest Calculator</h3>
+             </div>
+             <div class="amount"> 
+               <span>Amount </span>
+               <input type="number" id="principal"> 
+              </div>
+              <div class="rate">
+           Rate <input type= "range" id="range" min="1" max="20" value="10.25" step="0.25" onchange="updateRate()">
+             <span id="rate_val">
+                10.25
+            </span>% <br/>
+            </div>
+            <div class="year">
+           No. of Years <input type="number" id="years" list="all_years"><br/>
+              <datalist id="all_years">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </datalist>
+            </div>
+            <div class="interest">
+           Interest : <span id="result"></span><br/>
+           </div>
+           <button onclick="compute()">Compute Interest</button>
+        </div>
+        <footer>
+            &#169; This Calculator belongs to --AYOU000--
+        </footer>
+    </body>
+ </html>
